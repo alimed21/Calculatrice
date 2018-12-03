@@ -1,0 +1,44 @@
+<div id="calculatrice">
+  <input type="text" id="textEcran" value="{{textEcran}}"/>
+  <div class="clavierNum">
+    <div>
+      <input type="button" value="7" class="boutonNum" (click)="ecrireNombre($event)"  />
+      <input type="button" value="8" class="boutonNum"  (click)="ecrireNombre($event)"/>
+      <input type="button" value="9" class="boutonNum"  (click)="ecrireNombre($event)"/>
+    </div>
+    <div>
+      <input type="button" value="4" class="boutonNum"  (click)="ecrireNombre($event)"/>
+      <input type="button" value="5" class="boutonNum"  (click)="ecrireNombre($event)"/>
+      <input type="button" value="6" class="boutonNum"  (click)="ecrireNombre($event)"/>
+    </div>
+    <div>
+      <input type="button" value="1" class="boutonNum"  (click)="ecrireNombre($event)"/>
+      <input type="button" value="2" class="boutonNum"  (click)="ecrireNombre($event)"/>
+      <input type="button" value="3" class="boutonNum" (click)="ecrireNombre($event)" />
+    </div>
+    <div>
+      <input type="button" value="." class="boutonNum"  (click)="ecrireNombre($event)"/>
+      <input type="button" value="0" class="boutonNum"  (click)="ecrireNombre($event)"/>
+      <input type="button" value="=" class="boutonNum" (click)="calculer()"/>
+    </div>
+  </div>
+  <!--   End class numericPad -->
+
+  <div class="clavierOpe">
+    <div>
+      <input type="button" value="DEL" class="boutonOpe" (click)="effacer()"/>
+    </div>
+    <div>
+      <input type="button" value="÷" class="boutonOpe"  (click)="operations($event)"/>
+    </div>
+    <div>
+      <input type="button" value="x" class="boutonOpe"  (click)="operations($event)"/>
+    </div>
+    <div>
+      <input type="button" value="-" class="boutonOpe"  (click)="operations($event)"/>
+    </div>
+    <div>
+      <input type="button" value="+" class="boutonOpe"  (click)="operations($event)"/>
+    </div>
+  </div>
+</div>
